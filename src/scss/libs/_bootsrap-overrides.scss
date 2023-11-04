@@ -1,0 +1,108 @@
+// @use 'sass:meta' as meta;
+@use '../abstracts';
+
+// @forward 'node_modules/bootstrap/scss/variables' with (
+//     $theme-colors: map-remove($theme-colors, "info", "light", "dark")
+// );
+// @use 'node_modules/bootstrap/scss/bootstrap' as *;
+
+// scss-docs-start color-variables
+// $blue:    #0d6efd ;
+// $indigo:  #6610f2 ;
+// $purple:  #6f42c1 ;
+// $pink:    #d63384 ;
+// $red:     #dc3545 ;
+// $orange:  #fd7e14 ;
+// $yellow:  #ffc107 ;
+// $green:   #198754 ;
+// $teal:    #20c997 ;
+// $cyan:    #0dcaf0 ;
+
+// scss-docs-start theme-color-variables
+// $primary:       $blue ;
+// $secondary:     $gray-600 ;
+// $success:       $green ;
+// $info:          $cyan ;
+// $warning:       $yellow ;
+// $danger:        $red ;
+// $light:         $gray-100 ;
+// $dark:          $gray-900 ;
+
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// );
+
+// $bootstrap-settings: (
+  // variables override - see the docs for more info
+//   $theme-colors: map-remove($theme-colors, "info", "light", "dark"),
+// $body-bg: $lendo-light-gray,
+// );
+
+// @include meta.load-css('node_modules/bootstrap/scss/bootstrap', $with: $bootstrap-settings);
+
+@use "~bootstrap/scss/bootstrap" as * with (
+    // Bsse
+    $body-bg: abstracts.$lendo-light-gray,
+    $body-color: abstracts.$lendo-gray,
+    $font-family-base: abstracts.$lendo-font-family,
+    $font-weight-light: 200,
+    $font-weight-medium: 500,
+    $font-weight-bold: 700,
+    $font-weight-bolder: 800,
+    // Tabs
+    // $nav-tabs-border-radius: 0,
+    // $nav-link-padding-y: pxToRem(20px),
+    // $nav-link-padding-x: pxToRem(30px),
+    // $nav-link-font-size: pxToRem(22px),
+    // $nav-link-color: $white,
+    // $nav-link-hover-color: $lendo-light-gray-300,
+    // $nav-tabs-border-width: 0,
+    // Button
+    // $btn-padding-y: pxToRem(15px),
+    // $btn-padding-x: pxToRem(35px),
+    // $btn-padding-y-lg: pxToRem(15px),
+    // $btn-padding-x-lg: pxToRem(35px),
+    // $btn-font-weight: 700,
+    // Accordion
+    // $accordion-border-width: 0,
+    // $accordion-button-active-bg: transparent,
+    // $accordion-button-active-color: $lendo-gray,
+    // $accordion-padding-y: pxToRem(30px),
+    // $accordion-padding-x: pxToRem(30px),
+    // $accordion-button-padding-x: 0,
+    // $accordion-button-focus-border-color: none,
+    // $accordion-button-focus-box-shadow: none,
+    // $accordion-icon-width: 1.5rem,
+    // $accordion-button-icon: inline-svg($bs-icon-plus),
+    // $accordion-button-active-icon: inline-svg($bs-icon-minus),
+    
+    // Create your own map
+    // $custom-colors: (
+    //     "custom-color": #900
+    //     ),
+        
+        // Merge the maps
+        // $theme-colors: map-merge($theme-colors, $custom-colors),
+//         $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// ),
+        // $theme-colors: map-remove($theme-colors, "info", "light", "dark"),
+    
+        // $theme-colors: abstracts.$custom-colors
+        
+);
+

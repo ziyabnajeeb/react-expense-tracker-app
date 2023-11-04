@@ -1,0 +1,31 @@
+@use '../abstracts/index' as *;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;700;800&display=swap');
+
+h1,
+h2 {
+    color: $lendo-dark-blue;
+}
+
+h3 {
+    color: $lendo-blue;
+}
+
+h1 {
+    font-size: pxToRem(70px);
+}
+
+h2 {
+    font-size: pxToRem(50px);
+}
+
+h3 {
+    font-size: pxToRem(40px);
+}
+
+h4 {
+    font-size: pxToRem(30px);
+}
+
+h5 {
+    font-size: pxToRem(25px);
+}
